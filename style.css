@@ -1,0 +1,280 @@
+/* Global */
+body, html {
+  margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh; display: flex; justify-content: center; align-items: center;
+  background-color: #1565c0; /* Blue background */
+}
+
+.blue-bg {
+  background-color: #1565c0;
+  color: white;
+  width: 100vw; height: 100vh;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center;
+}
+
+.heading {
+  color: antiquewhite;
+}
+.container {
+  width: 100%; max-width: 600px;
+
+}
+
+
+h1 {
+  margin-bottom: 20px;
+
+}
+
+.card-container {
+  display: flex; justify-content: center; gap: 40px;
+}
+
+.card {
+  background-color: white;
+  width: 140px; height: 180px;
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.3);
+  cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 64px; height: 64px; margin-bottom: 10px;
+}
+
+.card p {
+  font-weight: 600; font-size: 18px;
+}
+
+/* User Form page */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 10px auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(49, 55, 66);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0d3d75;
+}
+
+/* Cards list in admin dashboard */
+.dashboard {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.team-card {
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.198);
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  max-width: 350px;
+  width: 100%;
+  text-align: left;
+  
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1565c0;
+}
+
+.team-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #334155;
+}
+
+/* Score form */
+.score-form {
+  max-width: 600px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px auto;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.score-form label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  color: rgb(8, 10, 25);
+}
+
+.score-form input[type=number] {
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.score-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.score-form button {
+  margin-top: 20px;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  color: #1565c0;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #1565c0;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #1565c0;
+  color: white;
+}
+
+
+.message {
+  color: rgb(255, 205, 205);
+  text-align: center;
+  margin-top: 15px;
+}
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.team-card:hover {
+  transform: scale(1.02);
+}
+.see-results-btn {
+  max-width: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2519c9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-results-btn:hover {
+  background-color: #0d3d75;
+}
+.popup-box {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  background-color: #24b5d1;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-box.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.hidden {
+  display: none;
+}

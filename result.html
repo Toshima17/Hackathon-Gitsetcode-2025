@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Results</title>
+  <link rel="stylesheet" href="result.css">
+  <script type="module" src="result.js" defer></script>
+  <style>
+         /* Back Button Styles */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  color: black;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+  </style>
+</head>
+
+<body>
+  <header>
+     <button class="back-button" onclick="history.back()">
+    <i class="fas fa-arrow-left">←</i>
+  </button>
+    <h1>🏆 Hackathon 2025 Results</h1>
+    <p>Final team rankings based on submitted scores</p>
+  </header>
+
+  <main>
+    <!-- Scored Teams Section -->
+    <section>
+      <h2 class="section-title">📊 Scored Teams</h2>
+      <div id="resultsContainer" class="result-section"></div>
+    </section>
+
+    <!-- Pending Evaluation Section -->
+    <section>
+      <h2 class="section-title">🕓 Pending Evaluation</h2>
+      <div id="pendingContainer" class="result-section"></div>
+    </section>
+  </main>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="result.js"></script>
+</body>
+</html>
